@@ -1,0 +1,27 @@
+.receita{
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column; /* um embaixo do outro */
+    margin-bottom: 5rem; /* margem embaixo da receita */
+    margin-right: 5rem; /* margem a direita da receita */
+}
+
+@media  screen and (min-width: 0) { /* celular */
+    .receita{
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+
+@media  screen and (min-width: 768px) { /* ipad / notebook */
+    .receita{
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+}
+
+@media  screen and (min-width: 992px) {  /* monitores desktop */
+    .receita{
+        width: calc(25% - 5rem); /* 5rem é referente ao espaço da direita */
+    }
+}

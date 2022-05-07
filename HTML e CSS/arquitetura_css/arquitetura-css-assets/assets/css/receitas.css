@@ -1,0 +1,23 @@
+.receitas{
+    background: #e5e5e5;
+    display: flex; /* elementos alinhados um do lado do outro */
+    flex-wrap: wrap; /* quando os elemtnos ficam muito espremidos um do lado do outro, joga o elemento pra baixo */ 
+}
+
+@media  screen and (min-width: 0) { /* celular */
+    .receitas{
+        padding: 5rem 0 0 1rem;
+    }
+}
+
+@media  screen and (min-width: 768px) { /* ipad / notebook */
+    .receitas{
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+
+@media  screen and (min-width: 992px) {  /* monitores desktop */
+    .receitas{
+        padding: 5rem 0 0 5rem; /*espaçamento interno entre os elementos */
+    }
+}
